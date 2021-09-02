@@ -378,15 +378,15 @@ class App extends Component {
         {this.renderUserInformation()}
         <BannerBarContainer />
         <NotificationsBarContainer />
-        <section className={styles.wrapper}>
+        {/* <section className={styles.wrapper}>
           <div className={openPanel ? styles.content : styles.noPanelContent}>
             {this.renderNavBar()}
             {this.renderMedia()}
             {this.renderActionsBar()}
           </div>
-          {/* {this.renderPanel()} */}
+          {this.renderPanel()}
           {this.renderSidebar()}
-        </section>
+        </section> */}
         <UploaderContainer />
         <BreakoutRoomInvitation />
         {!layoutContextState.presentationIsFullscreen && !layoutContextState.screenShareIsFullscreen && <PollingContainer />}
