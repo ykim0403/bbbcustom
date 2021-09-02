@@ -311,6 +311,7 @@ class TimeWindowList extends PureComponent {
       //   aria-live="polite"
       //   ref={node => this.messageListWrapper = node}
       // >
+      <div>
         <AutoSizer>
           {({ height, width }) => {
             if (width !== this.lastWidth) {
