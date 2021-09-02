@@ -65,18 +65,18 @@ class UserParticipants extends Component {
   }
 
   componentDidMount() {
-    const { compact } = this.props;
-    if (!compact) {
-      this.refScrollContainer.addEventListener(
-        'keydown',
-        this.rove,
-      );
+    // const { compact } = this.props;
+    // if (!compact) {
+    //   this.refScrollContainer.addEventListener(
+    //     'keydown',
+    //     this.rove,
+    //   );
 
-      this.refScrollContainer.addEventListener(
-        'click',
-        this.handleClickSelectedUser,
-      );
-    }
+    //   this.refScrollContainer.addEventListener(
+    //     'click',
+    //     this.handleClickSelectedUser,
+    //   );
+    // }
   }
 
   shouldComponentUpdate(nextProps, nextState) {
@@ -97,12 +97,12 @@ class UserParticipants extends Component {
   }
 
   componentWillUnmount() {
-    this.refScrollContainer.removeEventListener('keydown', this.rove);
-    this.refScrollContainer.removeEventListener('click', this.handleClickSelectedUser);
+    // this.refScrollContainer.removeEventListener('keydown', this.rove);
+    // this.refScrollContainer.removeEventListener('click', this.handleClickSelectedUser);
   }
 
   getScrollContainerRef() {
-    return this.refScrollContainer;
+    // return this.refScrollContainer;
   }
 
   rowRenderer({
@@ -136,7 +136,7 @@ class UserParticipants extends Component {
           key={key}
           id={`user-${user.userId}`}
         >
-          <UserListItemContainer
+          {/* <UserListItemContainer
             {...{
               compact,
               setEmojiStatus,
@@ -148,7 +148,7 @@ class UserParticipants extends Component {
             }}
             user={user}
             getScrollContainerRef={this.getScrollContainerRef}
-          />
+          /> */}
         </span>
       </CellMeasurer>
     );
