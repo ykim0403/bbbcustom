@@ -384,7 +384,7 @@ class App extends Component {
             {this.renderMedia()}
             {this.renderActionsBar()}
           </div>
-          {this.renderPanel()}
+          {/* {this.renderPanel()} */}
           {this.renderSidebar()}
         </section>
         <UploaderContainer />
