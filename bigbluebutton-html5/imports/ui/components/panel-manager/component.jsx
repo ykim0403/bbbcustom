@@ -295,14 +295,15 @@ class PanelManager extends Component {
     const ariaHidden = shouldAriaHide() && openPanel !== 'userlist';
 
     return (
-      <div
-        className={styles.userList}
-        aria-label={intl.formatMessage(intlMessages.userListLabel)}
-        key={enableResize ? null : this.userlistKey}
-        aria-hidden={ariaHidden}
-      >
-        <UserListContainer />
-      </div>
+      // <div
+      //   className={styles.userList}
+      //   aria-label={intl.formatMessage(intlMessages.userListLabel)}
+      //   key={enableResize ? null : this.userlistKey}
+      //   aria-hidden={ariaHidden}
+      // >
+      //   <UserListContainer />
+      // </div>
+      <div>유저리스트컨테이너</div>
     );
   }
 
@@ -342,14 +343,15 @@ class PanelManager extends Component {
     const { intl, enableResize } = this.props;
 
     return (
-      <section
-        id="chatPanel"
-        className={styles.chat}
-        aria-label={intl.formatMessage(intlMessages.chatLabel)}
-        key={enableResize ? null : this.chatKey}
-      >
-        <ChatContainer />
-      </section>
+      // <section
+      //   id="chatPanel"
+      //   className={styles.chat}
+      //   aria-label={intl.formatMessage(intlMessages.chatLabel)}
+      //   key={enableResize ? null : this.chatKey}
+      // >
+      //   <ChatContainer />
+      // </section>
+      <div>렌더채팅 구간</div>
     );
   }
 
