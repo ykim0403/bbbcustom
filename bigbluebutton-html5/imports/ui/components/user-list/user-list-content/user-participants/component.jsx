@@ -212,13 +212,13 @@ class UserParticipants extends Component {
             )
             : <hr className={styles.separator} />
         }
-        <div
+        {/* <div
           className={styles.virtulizedScrollableList}
           tabIndex={0}
           ref={(ref) => {
             this.refScrollContainer = ref;
           }}
-        >
+        > */}
           <span id="participants-destination" />
           <AutoSizer>
             {({ height, width }) => (

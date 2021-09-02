@@ -290,26 +290,27 @@ class TimeWindowList extends PureComponent {
     ChatLogger.debug('TimeWindowList::render', {...this.props},  {...this.state}, new Date());
 
     return (
-      [<div 
-        onMouseDown={()=> {
-          this.setState({
-            userScrolledBack: true,
-          });
-        }}
-        onWheel={(e) => {
-          if (e.deltaY < 0) {
-            this.setState({
-              userScrolledBack: true,
-            });
-            this.userScrolledBack = true
-          }
-        }}
-        className={styles.messageListWrapper}
-        key="chat-list"
-        data-test="chatMessages"
-        aria-live="polite"
-        ref={node => this.messageListWrapper = node}
-      >
+      [
+      // <div 
+      //   onMouseDown={()=> {
+      //     this.setState({
+      //       userScrolledBack: true,
+      //     });
+      //   }}
+      //   onWheel={(e) => {
+      //     if (e.deltaY < 0) {
+      //       this.setState({
+      //         userScrolledBack: true,
+      //       });
+      //       this.userScrolledBack = true
+      //     }
+      //   }}
+      //   className={styles.messageListWrapper}
+      //   key="chat-list"
+      //   data-test="chatMessages"
+      //   aria-live="polite"
+      //   ref={node => this.messageListWrapper = node}
+      // >
         <AutoSizer>
           {({ height, width }) => {
             if (width !== this.lastWidth) {
