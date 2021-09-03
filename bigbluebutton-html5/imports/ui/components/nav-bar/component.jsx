@@ -97,7 +97,7 @@ class NavBar extends Component {
         className={styles.navbar}
       >
         <div className={styles.top}>
-          <div className={styles.left}>
+          {/* <div className={styles.left}>
             {!isExpanded ? null
               : <Icon iconName="left_arrow" className={styles.arrowLeft} />
             }
@@ -117,7 +117,7 @@ class NavBar extends Component {
             {isExpanded ? null
               : <Icon iconName="right_arrow" className={styles.arrowRight} />
             }
-          </div>
+          </div> */}
           <div className={styles.center}>
             <h1 className={styles.presentationTitle}>{presentationTitle}</h1>
 
